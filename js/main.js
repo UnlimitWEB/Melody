@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     floorPath.on("click", toggleModal); /* при клике на этаж вызвать окно */
     modalCloseButton.on("click", toggleModal); /* при клике на кнопку закрыть - закрывает окно */
+    viewFlatsButton.on("click", toggleModal);
 
     // отслеживаем клик по кнопке вверх
     counterUp.on("click", function() {

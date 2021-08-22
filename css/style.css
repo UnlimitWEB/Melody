@@ -128,7 +128,7 @@ opacity: 1;
     margin: 0;
 }
 
-.counter {
+.floorcounter {
     font-family: "Bebas Neue Cyrillic", sans-serif;
     color: #635854;
     font-size: 124px;
@@ -172,6 +172,15 @@ opacity: 1;
     background-color: #fff;
     flex-grow: 1;
     display: flex;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: transform 0.2s, opacity 0,2s;
+    transition-delay: 0.2s;
+}
+
+.is-open > .modal-dialog {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .modal-image {
@@ -260,5 +269,24 @@ opacity: 1;
     }
     .button button-primary {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
