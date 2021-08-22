@@ -97,6 +97,10 @@ body {
     opacity: 1;
 }
 
+path.current-floor {
+opacity: 1;
+
+}
 .counter-group {
 
     display: flex;
@@ -140,3 +144,4 @@ body {
     padding: 16px 36px;
     cursor: pointer;
 }
+
