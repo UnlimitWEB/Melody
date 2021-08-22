@@ -181,6 +181,14 @@ opacity: 1;
     padding: 50px;
 }
 
+.flats path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flats path:hover {
+    opacity: 1;
+}
 .modal-title {
     font-family: "Bebas Neue Cyrillic", sans-serif;
     font-weight: normal;
