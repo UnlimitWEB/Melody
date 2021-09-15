@@ -6,8 +6,12 @@ $(document).ready(function () {
     var modal = $(".modal");
     var modalCloseButton = $(".modal-close-button");
     var viewFlatsButton = $(".view-flats");
+    const menuButton = $(".menu-button");
+    const navbarPanel = $(".navbar-panel");
     
-
+    menuButton.on('click', () => {
+        navbarPanel.toggle('fast');
+    });
 
     // функция при наведении мышкой на этаж
     floorPath.on('mouseover', function() {
