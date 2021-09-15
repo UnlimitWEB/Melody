@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    min-width: 768px;
 }
 
 .header {
@@ -30,7 +31,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 .navbar-panel {
     flex-grow: 1;
@@ -87,9 +88,8 @@ body {
 }
 
 .main {
-    
-    padding-top: 54px;
     display: flex;
+    padding-top: 54px;
     text-align: center;
 }
 
@@ -283,7 +283,6 @@ opacity: 1;
 @media (max-width: 1200px) {
     .container {
         width: 960px;
-        max-width: 1200px;
     }
     .navbar-item {
         margin-left: 20px;
@@ -339,6 +338,9 @@ opacity: 1;
 
 
 @media (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
     .main {
         display: block;
     }
@@ -362,3 +364,6 @@ opacity: 1;
     }
 
 }
+
+
+
